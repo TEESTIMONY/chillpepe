@@ -211,177 +211,137 @@ button:hover {
 }
 
 
-
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #249afc; /* Optional light blue background */
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: row;
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    .logo-container {
+      justify-content: center;
+    }
+  
+    .brand-name {
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      display: none;
+    }
+  
+    .nav-buttons {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .nav-buttons a {
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+    }
+  
+    .buy-btn {
+      font-size: 12px;
+      padding: 5px 8px;
+      height: auto;
+    }
   }
   
-  .navbar {
-    display: flex;
-    align-items: center;
-    font-family: "Gamja Flower", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 22px;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: white;
-    border: 2px solid black;
-    border-bottom: 6px solid black;
-    border-radius: 10px;
-    max-width: 80%;
-    margin: 20px auto;
-    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 768px) {
+    .container {
+      margin-top: 100px;
+      padding: 10px;
+    }
+  
+    .logo {
+      font-size: 150px;
+    }
+  
+    .logo .letter {
+      font-size: 150px;
+      -webkit-text-stroke: 6px #e6e6e6;
+    }
+  
+    .logo .character {
+      top: -180px; /* Adjusted for smaller screens */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .logo .character img {
+      max-width: 90%; /* Scale image proportionally */
+      height: auto;
+    }
   }
   
-  .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+  @media screen and (max-width: 480px) {
+    body{
+        align-items: center;
+    }
+    .navbar {
+      padding: 10px;
+    }
+  
+    .brand-name {
+      font-size: 22px;
+    }
+  
+    .nav-links {
+      gap: 8px;
+    }
+  
+    .nav-buttons {
+      gap: 5px;
+    }
+  
+    .nav-buttons a {
+      font-size: 25px;
+      width: 30px;
+      height: 30px;
+    }
+  
+    .buy-btn {
+      font-size: 10px;
+      padding: 4px 6px;
+    }
+  
+    .container {
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 120px;
+      margin-left: 24px;
+    }
+  
+    .logo {
+      font-size: 120px;
+    }
+  
+    .logo .letter {
+      font-size: 83px;
+      -webkit-text-stroke: 4px #e6e6e6;
+    text-shadow: 8px 5px 3px rgba(0, 0, 0, 0.829);
 
-  .logo-container img{
-    border-radius: 50%;
-    border: 2px solid black;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.829);
+    }
 
-
+    .description-container{
+        display: none;
+    }
+  
+    .logo .character {
+      top: -150px; /* Further adjust for smaller screens */
+    }
+  
+    .logo .character img {
+      max-width: 100%; /* Full width on small devices */
+      align-items: center;
+    }
   }
   
-  .logo-new {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .brand-name {
-    font-size: 28px;
-    font-family: "Hanalei Fill", serif;
-
-    font-weight: bold;
-    background-color: transparent;
-    border-radius: 5px;
-    letter-spacing: 2px;
-
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #007bff; /* Optional hover color */
-  }
-  
-  .nav-buttons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .nav-buttons a{
-    background-color: white;
-    border: 1px solid black;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 25px;
-    padding: 5px;
-    color: black;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.829);
-
-  }
-
-  .buy-btn {
-    border: 2px solid black;
-    background-color: white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.829);
-    height: 40px;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .close-btn:hover {
-    background-color: #ffcccc;
-  }
-  
-  .telegram-btn:hover {
-    background-color: #e6e6e6;
-  }
-  
- 
-
-.container {
-    display: flex;
-    margin-top: 200px;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    position: relative;
-}
-
-.logo {
-    position: relative;
-    font-size: 270px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: #ffffff;
-    text-shadow: 2px 2px #000000;
-}
-
-.logo .letter {
-    position: relative;
-    display: inline-block;
-    font-family: "Hanalei Fill", serif;
-    text-shadow: 20px 18px 5px rgba(0, 0, 0, 0.829);
-    -webkit-text-stroke:8px #e6e6e6;
-
-}
-
-.logo .letter.c,
-.logo .letter.h,
-.logo .letter.l,
-.logo .letter.h,
-.logo .letter.e {
-    color: #4A90E2;
-}
-
-.logo .letter.i,
-.logo .letter.p {
-    color: #F5A623;
-}
-
-.logo .character {
-    position: absolute;
-    top: -250px; /* Adjust position for overlapping */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-}
-
-.logo .character img {
-    max-width: 1200px;
-    height: auto;
-    z-index: 2;
-}
