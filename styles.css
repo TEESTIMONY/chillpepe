@@ -283,19 +283,27 @@ button:hover {
     flex-direction: column-reverse;
     text-align: center;
     margin: 0;
-  }
+}
 
-  .about-content {
+
+.about-content {
     max-width: 100%;
     padding: 20px;
-  }
+    border: 2px solid #F5A623;
+    border-radius: 30px;
+    margin: 15px;
 
-  .about-title span{
-    color: #F5A623;
-  }
-  .about-image img {
-    margin-top: 20px;
-  }
+}
+
+
+
+.about-title span{
+color: #F5A623;
+}
+.about-image img {
+margin-top: 20px;
+}
+
 }
 
 
