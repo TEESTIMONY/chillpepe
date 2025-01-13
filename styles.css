@@ -212,6 +212,36 @@ button:hover {
 
 
 /* Responsive styles */
+@media screen and (max-width:991px) {
+.navbar {
+    flex-direction: row;
+    max-width: 87%;
+    padding: 15px;
+    height: 30px;}
+
+.container {
+    margin-top: 300px;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 150px;
+}
+
+.logo .letter {
+    font-size: 150px;
+    -webkit-text-stroke: 6px #e6e6e6;
+
+}
+
+.logo .character {
+    top: -350px; /* Adjusted for smaller screens */
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
+
+
 @media screen and (max-width: 768px) {
 .navbar {
     flex-direction: row;
@@ -265,7 +295,6 @@ button:hover {
 
 .logo .letter {
     font-size: 50px;
-    
     -webkit-text-stroke: 6px #e6e6e6;
 
 }
