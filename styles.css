@@ -234,6 +234,9 @@ button:hover {
     margin-bottom: 20px;
   }
   
+  .about-title span{
+    color: #F5A623;
+  }
   .about-text {
     font-size: 2rem;
     font-family: "Gamja Flower", serif;
@@ -249,7 +252,189 @@ button:hover {
     border: 2px solid #F5A623;
   }
   
+  .tokenomics-section {
+    padding: 20px 20px;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .tokenomics-section .token-container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #62bcec;
+    border: 3px solid #F5A623;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .tokenomics-title {
+    font-family: "Hanalei Fill", serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .tokenomics-section span{
+    color: #F5A623;
+  }
 
+  .tokenomics-description {  
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #fff;
+    font-family: "Gamja Flower", serif;
+    
+  
+  }
+  
+  .tokenomics-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  
+  .tokenomics-details {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  
+  .tokenomics-details li {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #F5A623;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #FFF;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Community Section Styling */
+.community-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: transparent; /* Matching brown background */
+    color: #fff;
+    border-radius: 15px;
+    margin: 20px;
+  }
+  
+  .community-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .community-image img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .community-text {
+    text-align: center;
+    max-width: 60%;
+  }
+  
+  .community-title {
+    font-size: 4rem;
+    font-family: "Hanalei Fill", serif;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .community-title span{
+    color: #F5A623;
+  }
+  
+  .community-description {
+    font-size: 2rem;
+    font-family: "Gamja Flower", serif;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .community-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .button {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #d1b085; /* Button color */
+    box-shadow: 0 4px #8c6a48;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px #8c6a48;
+  }
+  
+  .telegram-btn {
+    background-color: #F5A623;
+    font-family: "Gamja Flower", serif;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size:35px;
+    border-radius: 5px;
+    cursor: pointer;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+    transition: background-color 0.3s ease;
+  }
+  
+  .twitter-btn {
+    background-color: #F5A623;
+    font-family: "Gamja Flower", serif;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size:35px;
+    border-radius: 5px;
+    cursor: pointer;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+    transition: background-color 0.3s ease;
+
+  }
+
+  .footer-container p {
+    font-size: 1rem; /* Slightly smaller font size for mobile */
+    line-height: 1.4;
+    color: white;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+  
+  }
+  
+  .footer-container span {
+    font-size: 1rem; /* Ensure the highlight remains prominent */
+  }
+  
 
 /* Responsive styles */
 @media screen and (max-width:991px) {
@@ -302,6 +487,41 @@ color: #F5A623;
 }
 .about-image img {
 margin-top: 20px;
+}
+
+.community-section{
+    padding: 10px;
+    margin-top: 150px;
+}
+.community-content {
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+}
+
+.community-image {
+    position: absolute;
+    width: 250px;
+    top: -163px; /* Adjust position for overlapping */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    z-index: -1;
+}
+
+.community-text {
+    max-width: 100%;
+    font-size: 20px;
+    padding-top: 0;
+}
+
+.community-description{
+    font-size:1.6rem ;
+}
+
+.community-title {
+    font-size: 3rem;
 }
 
 }
