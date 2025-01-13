@@ -215,8 +215,9 @@ button:hover {
 @media screen and (max-width: 768px) {
 .navbar {
     flex-direction: row;
-    max-width: 100%;
+    max-width: 87%;
     padding: 15px;
+    height: 30px;
 }
 
 .logo-container {
@@ -242,9 +243,9 @@ button:hover {
 }
 
 .nav-buttons a {
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
 }
 
 .buy-btn {
@@ -259,12 +260,12 @@ button:hover {
 }
 
 .logo {
-    font-size: 150px;
+    font-size: 50px;
 }
 
 .logo .letter {
-    font-size: 150px;
-
+    font-size: 50px;
+    
     -webkit-text-stroke: 6px #e6e6e6;
 
 }
@@ -314,19 +315,20 @@ body{
 
 .container {
     align-items: center;
-    max-width: 500px;
     justify-content: center;
     justify-items: center;
-    margin-top: 120px;
-    margin-left: 24px;
+    margin-top: 110px;
 }
 
-
+.logo {
+    font-size: 50px;
+}
 
 .logo .letter {
-    font-size: 83px;
-    -webkit-text-stroke: 4px #e6e6e6;
-    text-shadow: 8px 5px 3px rgba(0, 0, 0, 0.829);
+    font-size: 60px;
+    font-weight: bolder;
+    -webkit-text-stroke: 5px #e6e6e6;
+    text-shadow: 10px 5px 3px rgba(0, 0, 0, 0.829);
 
 }
 
@@ -335,7 +337,7 @@ body{
 }
 
 .logo .character {
-    top: -150px; /* Further adjust for smaller screens */
+    top: -120px; /* Further adjust for smaller screens */
 }
 
 .logo .character img {
