@@ -318,7 +318,7 @@ body{
     align-items: center;
     justify-content: center;
     justify-items: center;
-    margin-top: 110px;
+    margin-top: 130px;
 }
 
 .logo {
@@ -326,7 +326,7 @@ body{
 }
 
 .logo .letter {
-    font-size: 60px;
+    font-size: 62px;
     font-weight: bolder;
     -webkit-text-stroke: 3px #e6e6e6;
     text-shadow: 8px 5px 3px rgba(0, 0, 0, 0.829);
@@ -338,7 +338,8 @@ body{
 }
 
 .logo .character {
-    top: -120px; /* Further adjust for smaller screens */
+    top: -150px; /* Further adjust for smaller screens */
+    width: 210px;
 }
 
 .logo .character img {
