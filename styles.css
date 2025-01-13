@@ -213,135 +213,133 @@ button:hover {
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: row;
-      max-width: 100%;
-      padding: 15px;
-    }
+.navbar {
+    flex-direction: row;
+    max-width: 100%;
+    padding: 15px;
+}
+
+.logo-container {
+    justify-content: center;
+}
+
+.brand-name {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    display: none;
+}
+
+.nav-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.nav-buttons a {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.buy-btn {
+    font-size: 12px;
+    padding: 5px 8px;
+    height: auto;
+}
   
-    .logo-container {
-      justify-content: center;
-    }
+.container {
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 150px;
+}
+
+.logo .letter {
+    font-size: 150px;
+
+    -webkit-text-stroke: 6px #e6e6e6;
+
+}
+
+.logo .character {
+    top: -180px; /* Adjusted for smaller screens */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo .character img {
+    max-width: 90%; /* Scale image proportionally */
+    height: auto;
+}
+}
   
-    .brand-name {
-      font-size: 28px;
-      letter-spacing: 1px;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      display: none;
-    }
-  
-    .nav-buttons {
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 5px;
-    }
-  
-    .nav-buttons a {
-      font-size: 20px;
-      width: 40px;
-      height: 40px;
-    }
-  
-    .buy-btn {
-      font-size: 12px;
-      padding: 5px 8px;
-      height: auto;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      margin-top: 100px;
-      padding: 10px;
-    }
-  
-    .logo {
-      font-size: 150px;
-    }
-  
-    .logo .letter {
-      font-size: 150px;
-      -webkit-text-stroke: 6px #e6e6e6;
-    }
-  
-    .logo .character {
-      top: -180px; /* Adjusted for smaller screens */
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  
-    .logo .character img {
-      max-width: 90%; /* Scale image proportionally */
-      height: auto;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    body{
-        align-items: center;
-    }
-    .navbar {
-      padding: 10px;
-    }
-  
-    .brand-name {
-      font-size: 22px;
-    }
-  
-    .nav-links {
-      gap: 8px;
-    }
-  
-    .nav-buttons {
-      gap: 5px;
-    }
-  
-    .nav-buttons a {
-      font-size: 25px;
-      width: 30px;
-      height: 30px;
-    }
-  
-    .buy-btn {
-      font-size: 10px;
-      padding: 4px 6px;
-    }
-  
-    .container {
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-      margin-top: 120px;
-      margin-left: 24px;
-    }
-  
-    .logo {
-      font-size: 120px;
-    }
-  
-    .logo .letter {
-      font-size: 83px;
-      -webkit-text-stroke: 4px #e6e6e6;
+@media screen and (max-width: 480px) {
+body{
+    align-items: center;
+}
+.navbar {
+    padding: 10px;
+}
+
+.brand-name {
+    font-size: 22px;
+}
+
+.nav-links {
+    gap: 8px;
+}
+
+.nav-buttons {
+    gap: 5px;
+}
+
+.nav-buttons a {
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+}
+
+.buy-btn {
+    font-size: 10px;
+    padding: 4px 6px;
+}
+
+.container {
+    align-items: center;
+    max-width: 500px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 120px;
+    margin-left: 24px;
+}
+
+
+
+.logo .letter {
+    font-size: 83px;
+    -webkit-text-stroke: 4px #e6e6e6;
     text-shadow: 8px 5px 3px rgba(0, 0, 0, 0.829);
 
-    }
+}
 
-    .description-container{
-        display: none;
-    }
-  
-    .logo .character {
-      top: -150px; /* Further adjust for smaller screens */
-    }
-  
-    .logo .character img {
-      max-width: 100%; /* Full width on small devices */
-      align-items: center;
-    }
-  }
-  
+.description-container{
+    display: none;
+}
+
+.logo .character {
+    top: -150px; /* Further adjust for smaller screens */
+}
+
+.logo .character img {
+    max-width: 100%; /* Full width on small devices */
+    align-items: center;
+}
+}
